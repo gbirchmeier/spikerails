@@ -1,8 +1,13 @@
+.DS_Store
+*swp
+
 *.rbc
 capybara-*.html
 .rspec
 /log
 /tmp
+!/log/.keep
+!/tmp/.keep
 /db/*.sqlite3
 /db/*.sqlite3-journal
 /public/system
@@ -47,3 +52,14 @@ bower.json
 # Ignore node_modules
 node_modules/
 
+# Ignore uploaded files in development.
+/storage/*
+!/storage/.keep
+
+/public/assets
+
+/public/packs
+/public/packs-test
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity

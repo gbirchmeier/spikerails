@@ -1,6 +1,5 @@
 FactoryBot.define do
   factory :thinger do
-    name { 'foo' }
-
+    sequence(:name) {|n| "thinger-#{n}" }
   end
 end

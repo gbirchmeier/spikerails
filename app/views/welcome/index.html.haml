@@ -1,0 +1,11 @@
+%h1 Dummy home page
+
+%p welcome/index
+
+- if Thinger.count < 1
+  %p There are no Thingers in the DB.
+- else
+  %ul
+    Thingers in DB:
+    - Thinger.all.each do |thinger|
+      %li #{thinger.id}: #{thinger.name}
